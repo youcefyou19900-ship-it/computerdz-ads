@@ -61,6 +61,9 @@
 - قرار المستخدم 19/11: **الـ API الرسمي تاع Meta** (ماشي Business Suite ولا أدوات خارجية). الحسابات: **صفحة FB + IG تاع COMPUTER DZ برك** (Dr Laptop ماشي دركا). المحتوى: الكرياتيف المعتمدين في «كرياتيف» (30 = 6 × 5) كـ Reels، نفس الفيديو في FB و IG. **زوج في النهار: 13:00 و 20:00 (توقيت الجزائر)** ← 15 يوم.
 - التشغيل: **GitHub Actions** في الريبو `youcefyou19900-ship-it/computerdz-ads` (⚠️ الريبو public: الرزنامة والكابشنات يبانو، الـ token لا). الـ token يحطو المستخدم بيدو في GitHub Secrets (`META_TOKEN`) — Claude ما يشوفوش وما يكتبوش.
 - حدود Meta (docs 19/11): FB Reels 30 منشور/24 سا، 3–90 ث، 9:16؛ IG 50 منشور/24 سا (resumable upload من ملف). تطبيق في Development mode: المنشورات يشوفوهم غير أصحاب الأدوار ← لازم Live.
+- **19/11 (المستخدم):** الترتيب = دورات (الفيديو 1 تاع كل منتج بترتيب «كرياتيف»: HP ← 3310 ← 3380 ← NEC ← 3120 ← 3190، ثم 2…5). **زوج في النهار** (طلب ثلاثة ثم رجع لزوج). الطلب في الكابشن: «📩 للطلب: تواصل معنا في الخاص.» **الفيديو الأول (HP G9 · 1 · CARDS) «في أقرب وقت»** (publish_at = ASAP، approved) — الباقي يبدا 20/11 13:00 ويستنى «نعتمد».
+- الكود: فرع `claude/autopost` (`autopost/publish.py`، `calendar.json`، `make_calendar.py`، `README.md` = دليل المستخدم، `.github/workflows/autopost.yml`، `tests/mock_meta.py`). الفيديوهات: فرع orphan `autopost-media` (`media/<Prod>_N_<STYLE>_<prix>.mp4`، نسخ crf 22 maxrate 4.5M GOP 2 s، AAC 48k). ⚠️ الـ workflow لازم يكون في `main` باش يدور (schedule + Run workflow) ← نستناو «ادمج» ولا «حل PR» من المستخدم.
+- ⚠️ فخ: ما تشغّلش زوج ffmpeg على نفس ملف الخروج (HP 1 و 2 خرجو مكسّرين ← تعاودو). تحقق: `ffmpeg -v error -i f -f null -` = 0 سطر.
 - الكابشنات تتبع نفس قواعد الإعلانات (الفرنسية للماركة والمواصفات، السعر بالدارجة، بلا «جديد/مستعمل»، بلا «الخيمة» ← Position pliable، البطارية غير 3120 و NEC). الرزنامة كاملة تتعتمد مرة وحدة من المستخدم قبل أول نشر.
 
 ## المحتوى Dr Laptop — هوية «cine» (16/11 19:00، محادثة «video editeur pc») — جروب «مقترح محتوى»

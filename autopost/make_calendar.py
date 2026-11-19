@@ -35,7 +35,7 @@ PRODUCTS = {
                  price_txt="💰 37 000 دج (3 مليون و 700)",
                  specs=["Intel Core i3-6006U (6e génération)", "4 GB RAM · 128 GB SSD", "Écran tactile 10 points",
                         "Windows 10 Pro"],
-                 hooks={1: ("QUIZ", "Quiz: واش تعرف على Dell Latitude 3380؟ ❓"),
+                 hooks={1: ("QUIZ", "Quiz: خمّن السومة تاع Dell Latitude 3380 ❓"),
                         2: ("JOURNAL", "عاجل: Dell Latitude 3380 بـ 37 000 دج 🗞️"),
                         3: ("PASSEPORT", "كل خطوة بختمها: من الطلبية حتى الخلاص 🛂"),
                         4: ("TABLEUR", "للموظف في البيرو: Excel، Word، والإيمايلات 📊"),

@@ -53,6 +53,8 @@ def now():
 
 
 def at(entry):
+    if str(entry["publish_at"]).strip().upper() == "ASAP":  # "as soon as possible" (user, 19/11: the first video)
+        return now() - dt.timedelta(minutes=1)
     return dt.datetime.strptime(entry["publish_at"], "%Y-%m-%d %H:%M").replace(tzinfo=TZ)
 
 
